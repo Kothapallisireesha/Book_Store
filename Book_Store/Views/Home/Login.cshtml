@@ -1,0 +1,20 @@
+﻿@model Book_Store.Models.Login
+@{ ViewData["Title"] = "Login";
+                Layout = "~/Views/Shared/_Layout.cshtml"; }
+
+<h1 style="color:aliceblue">Login</h1>
+<form method="post">
+    <b><label for="email" style="color: whitesmoke">Email: </label></b>
+    <input id="email" name="email" type="text" placeholder="Enter your email" class="form-control" asp-for="email" /><br />
+    <label for="password" style="color: whitesmoke">Password: </label>
+    <input id="password" name="password" type="password" placeholder="Enter your password" class="form-control" asp-for="password" />
+    <br />
+    <input type="submit" asp-action="Login" style="color: Black; background-color:aliceblue" />
+</form>
+<h4 style="color:azure"> <a asp-action="Register" style="color:black"> New User</a></h4>
+
+@*
+    For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
+*@
+@{
+}
